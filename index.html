@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/custom.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>HIFES - Seu horário acadêmico!</title>
+    </head>
+    <body class = "">
+
+
+        <div class="">
+            <nav class="nav-extended  teal light-green">
+                <div class="nav-wrapper">
+                  <a href="./" class="brand-logo">HIFES</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="./">Home</a></li>
+                    <li><a class="" href="#modal1">Sobre</a></li>
+                  </ul>
+                  <ul class="side-nav" id="mobile-demo">
+                      <li><a href="./">Home</a></li>
+                      <li><a class="" href="#modal1">Sobre</a></li>
+                  </ul>
+                </div>
+              </nav>
+          </div>
+
+          <main>
+        <ul class="collection">
+            <a href="sistemas-pri.html" class="">
+                <li class="collection-item avatar">
+                    <i class="material-icons circle">query_builder</i>
+                    <span class="title">Sistema de Informação</span>
+                    <p>Primeiro Período</p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+            </a>
+            <a href="sistemas-seg.html" class="">
+                <li class="collection-item avatar">
+                    <i class="material-icons circle">query_builder</i>
+                    <span class="title">Sistema de informação</span>
+                    <p>Terceiro Período</p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+            </a>
+        </ul>
+
+
+        </main>
+
+        <footer class="page-footer teal light-green">
+          <div class="footer-copyright">
+            <div class="container"></div>
+          </div>
+        </footer>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Sobre</h4>
+            <p><i class="material-icons">settings</i> HIFES v0.0.1 <br>
+                <small>Ainda estamos em fase de implementação.</small></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+          </div>
+        </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+      $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+        $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+          });
+          $('#modal1').modal('open');
+      </script>
+    </body>
+  </html>
